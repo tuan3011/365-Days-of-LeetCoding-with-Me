@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given a list of dominoes, return the number of pairs (i, j) for which dominoes[i] is equivalent to dominoes[j].
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 To avoid the $O(N^2)$ brute-force approach of comparing every domino with each other, we need a way to group equivalent dominoes together. The best way to do this is to normalize them into a single "canonical form" so that both `[1, 2]` and `[2, 1]` look exactly the same to our program.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. **Normalization:** For each domino `[a, b]`, we force the smaller number to be the tens digit and the larger number to be the units digit using `Math.min(a,b) * 10 + Math.max(a,b)`. This guarantees that `[1,2]` and `[2,1]` both evaluate to the integer `12`.
 2. **Frequency Array:** Since the values on the dominoes are between 1 and 9, the maximum normalized value is `99`. We can use a simple integer array `count` of size 100 to act as our frequency map.
@@ -26,7 +26,7 @@ To avoid the $O(N^2)$ brute-force approach of comparing every domino with each o
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -56,7 +56,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -64,14 +64,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 2 / 365
 **Problem:** Number of Equivalent Domino Pairs
