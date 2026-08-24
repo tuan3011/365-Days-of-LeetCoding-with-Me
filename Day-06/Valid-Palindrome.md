@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Check if a given string is a valid palindrome, considering only alphanumeric characters and ignoring cases.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 My first thought was using a loop to extract valid characters into a new array or string, and then using the two pointers method to check the whole string. However, I realized this would take $O(N)$ extra space. To optimize it, I decided to apply the two pointers directly on the original string in-place to save memory.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. Initialize two pointers: `left` at the beginning (index 0) and `right` at the end (index `s.length() - 1`).
 2. Run a `while (left < right)` loop to move the pointers towards the center.
@@ -28,7 +28,7 @@ My first thought was using a loop to extract valid characters into a new array o
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -49,7 +49,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 (The `left` and `right` pointers traverse the string only once. Combined, they travel a total distance of $N$ characters).
@@ -58,7 +58,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Two Pointers.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -66,14 +66,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 6 / 365
 **Problem:** Valid Palindrome
