@@ -6,13 +6,13 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given an unsorted array of integers, return the length of the longest consecutive elements sequence.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 My very first thought was the most natural one: just use `Arrays.sort()`, loop through the array, and count consecutive numbers. But then I looked at the constraints—the problem strictly demands an **$O(N)$** time complexity. Since sorting takes $O(N \log N)$, it's a trap. 
 
@@ -20,7 +20,7 @@ I knew I needed a data structure that could answer "Does the next number exist?"
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. **The $O(1)$ Bucket:** Throw all numbers into a `HashSet`.
 2. **The $O(N)$ Filter (The "Aha!" Moment):** We shouldn't start counting from just any number. A number is only the **start** of a sequence if the number strictly before it (`num - 1`) DOES NOT exist in the set. For example, in `[1, 2, 3]`, we only start the `while` loop when we are at `1` (because `0` is not in the set). If we are at `2` or `3`, we completely ignore them because they are just "followers".
@@ -32,7 +32,7 @@ I knew I needed a data structure that could answer "Does the next number exist?"
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -60,7 +60,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 (Adding to the set takes $O(N)$. Iterating through the set takes $O(N)$. The inner `while` loop looks like it could be $O(N^2)$, but because of the `if` statement, the `while` loop only runs for valid sequences. Across the entire program, each number is visited inside the `while` loop exactly once. Thus, $O(N + N) = O(N)$).
@@ -69,7 +69,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -77,14 +77,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 4 / 365
 **Problem:** Longest Consecutive Sequence
