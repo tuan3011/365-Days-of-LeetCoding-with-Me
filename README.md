@@ -118,27 +118,6 @@ Array · Hash Table · String · Sorting · Counting · Two Pointers · Union Fi
 
 Arrays · Strings · Sliding Window · Binary Search · Stack · Queue · Linked List · Trees · Graphs · Dynamic Programming
 
-## 📁 Repository Structure
-
-```text
-365-Days-of-LeetCoding-with-Me/
-│
-├── Day-01/
-│   └── Lexicographically-Smallest-String-After-a-Swap.md
-│
-├── Day-02/
-│   ├── Number-of-Equivalent-Domino-Pairs.md
-│   └── Two-Sum.md
-│
-├── Day-03/
-│   ├── Group-Anagrams.md
-│   └── Number-of-Good-Pairs.md
-│
-├── ...
-│
-└── README.md
-```
-
 ## 💻 Languages
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
