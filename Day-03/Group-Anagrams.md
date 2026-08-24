@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given an array of strings, group the anagrams together.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 My first thought was to convert the characters to their integer values (ASCII) and sum them up to act as a unique identifier for each anagram group. However, I quickly realized this creates severe collisions (e.g., `"ad"` and `"bc"` both have the same sum, but are not anagrams). The only 100% safe way to identify anagrams is to find a "canonical form" for them. Sorting the characters of the string guarantees that all anagrams will perfectly match a single, unique string.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. We use a `HashMap` to group the strings. The **Key** will be the sorted version of the string (the canonical form), and the **Value** will be a `List<String>` acting as a "bag" to hold all the original strings that share that sorted form.
 2. For each string `s` in the array:
@@ -30,7 +30,7 @@ My first thought was to convert the characters to their integer values (ASCII) a
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -54,7 +54,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N \cdot K \log K)`
 (Where $N$ is the number of strings in the array, and $K$ is the maximum length of a string. We iterate through $N$ strings, and for each string, we sort it which takes $O(K \log K)$ time).
@@ -63,7 +63,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -71,14 +71,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 3 / 365
 **Problem:** Group Anagrams
