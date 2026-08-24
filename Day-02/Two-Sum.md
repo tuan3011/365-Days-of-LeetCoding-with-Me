@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given an array of integers and an integer target, return indices of the two numbers such that they add up to target.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 My initial thought was to use a frequency array to keep track of the numbers I've seen, similar to other counting problems. However, looking at the constraints, the numbers can be negative and as large as $10^9$. Creating an array of that size is impossible and would result in an `IndexOutOfBoundsException` or `OutOfMemoryError`. That's when I realized I needed a data structure that provides $O(1)$ lookup time without being constrained by the values themselves: A `HashMap`.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. **The Core Logic:** For any given `currentNum` at index `i`, we are looking for a specific `neededNum` such that `currentNum + neededNum = target` (which means `neededNum = target - currentNum`).
 2. **The Map:** We use a `HashMap` where the **Key** is the number we have visited, and the **Value** is its index. 
@@ -28,7 +28,7 @@ My initial thought was to use a frequency array to keep track of the numbers I'v
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -51,7 +51,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 (We traverse the array containing $N$ elements exactly once. Each lookup and insertion in the HashMap takes $O(1)$ time).
@@ -60,7 +60,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -68,14 +68,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 2 / 365
 **Problem:** Two Sum
