@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given an integer array, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 My first thought was using a similar method to the "Good Pairs" problem.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 I initially created an array of size 100 to count the occurrences of the numbers (I didn't look carefully at the constraints). I iterated through the array to count the appearances until a number reached a count of 2 and returned true. But after testing and submitting, it threw an `IndexOutOfBoundsException` because the constraints include negative numbers and values up to $10^9$. 
 
@@ -26,7 +26,7 @@ Then I realized I needed a data structure that can handle large, unpredictable n
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -43,7 +43,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 $O(N)$
@@ -52,7 +52,7 @@ $O(N)$
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -60,14 +60,14 @@ $O(N)$
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 5 / 365
 **Problem:** Contains Duplicate
