@@ -47,7 +47,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 (Where $N$ is the number of dominoes. We only iterate through the 2D array exactly once).
