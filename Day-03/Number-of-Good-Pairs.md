@@ -6,19 +6,19 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given an array of integers, return the number of good pairs (where nums[i] == nums[j] and i < j).
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 The brute-force approach requires nested loops to check every pair, which takes $O(N^2)$ time. However, this is just a frequency counting problem. We can optimize it to $O(N)$ by keeping track of the frequencies of the numbers we've seen so far and counting pairs dynamically.
 
 ---
 
-## 🚀 Approach
+## Approach
 
 1. **Frequency Array:** Looking at the constraints, the maximum value in `nums` is 100. Therefore, we can create an integer array `count` of size `101` (since arrays are 0-indexed) to store the frequency of each number.
 2. **Dynamic Pair Counting:** We iterate through the array exactly once. When we are at a specific `num`, the number of new valid pairs it can form is exactly the number of times we have seen `num` in the past.
@@ -26,7 +26,7 @@ The brute-force approach requires nested loops to check every pair, which takes 
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -45,7 +45,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(N)`
 (We only iterate through the array `nums` exactly once).
@@ -54,7 +54,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Array.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -62,14 +62,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 3 / 365
 **Problem:** Number of Good Pairs
