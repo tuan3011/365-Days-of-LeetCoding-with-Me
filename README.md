@@ -1,123 +1,84 @@
-<h1 align="center">🚀 365 Days of LeetCoding with Me</h1>
+# 365 Days of LeetCoding with Me
 
-<p align="center">
-  <strong>One problem. One day. 365 days.</strong>
-</p>
+> A 365-day journey to improve problem-solving, algorithms, and consistency through LeetCode.
 
-<p align="center">
-  A personal journey to build stronger problem-solving,
-  algorithmic thinking, and consistency through LeetCode.
-</p>
+## About
 
----
+This repository documents a personal challenge to solve one LeetCode problem every single day for a year. Each day contains a solved problem alongside its detailed documentation. The goal is to consistently practice algorithmic thinking, recognize patterns, and write cleaner, more efficient code.
 
-## 📊 Challenge Progress
+## Repository Structure
 
-| Metric | Progress |
-|--------|----------|
-| 🗓️ Days Completed | 6 / 365 |
-| 📈 Progress | 1.6% |
-| 🔥 Current Streak | 6 days |
-| ⏳ Remaining | 359 days |
-| 🧩 Problems Solved | 8 |
-
-Progress: `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░` 1.6%
-
-## 🎯 Difficulty Breakdown
-
-| Difficulty | Problems |
-|------------|----------|
-| 🟢 Easy | 6 |
-| 🟡 Medium | 2 |
-| 🔴 Hard | 0 |
-| **Total** | **8** |
+Each `Day-XX` directory contains the solution and documentation for that day's problem.
 
 ```text
-🟢 Easy    ██████
-🟡 Medium  ██
-🔴 Hard    
+365-Days-of-LeetCoding-with-Me/
+│
+├── Day-01/
+│   └── Lexicographically-Smallest-String-After-a-Swap.md
+├── Day-02/
+│   ├── Number-of-Equivalent-Domino-Pairs.md
+│   └── Two-Sum.md
+├── Day-03/
+│   ├── Group-Anagrams.md
+│   └── Number-of-Good-Pairs.md
+├── ...
+└── README.md
 ```
 
-## 🧠 Topics
+## Documentation Format
 
-| Topic | Problems |
-|-------|----------|
-| Array | 6 |
-| Hash Table | 6 |
-| String | 3 |
-| Sorting | 2 |
-| Counting | 2 |
-| Two Pointers | 1 |
-| Union Find | 1 |
-| Math | 1 |
-| Greedy | 1 |
+Each solution is documented in a consistent Markdown format to reinforce learning and ensure readability:
 
-## 🏃 Recent Progress
+- **Problem**: A brief description of the problem.
+- **Key Insight**: The main pattern or core idea required to solve it.
+- **Approach**: The step-by-step logic.
+- **Implementation**: The actual Java code submitted to LeetCode.
+- **Complexity**: Time and space complexity analysis.
+- **Lessons Learned**: Practical takeaways and edge cases to watch for.
 
-| Day | Problem | Difficulty | Topic |
-|-----|---------|------------|-------|
-| Day 06 | [Valid Palindrome](Day-06/Valid-Palindrome.md) | 🟢 Easy | Two Pointers, String |
-| Day 05 | [Contains Duplicate](Day-05/Contains-Duplicate.md) | 🟢 Easy | Array, Hash Table, Sorting |
-| Day 04 | [Longest Consecutive Sequence](Day-04/Longest-Consecutive-Sequence.md) | 🟡 Medium | Array, Hash Table, Union Find |
-| Day 03 | [Group Anagrams](Day-03/Group-Anagrams.md) | 🟡 Medium | Array, Hash Table, String, Sorting |
-| Day 03 | [Number of Good Pairs](Day-03/Number-of-Good-Pairs.md) | 🟢 Easy | Array, Hash Table, Math, Counting |
-| Day 02 | [Number of Equivalent Domino Pairs](Day-02/Number-of-Equivalent-Domino-Pairs.md) | 🟢 Easy | Array, Hash Table, Counting |
-| Day 02 | [Two Sum](Day-02/Two-Sum.md) | 🟢 Easy | Array, Hash Table |
-| Day 01 | [Lexicographically Smallest String After a Swap](Day-01/Lexicographically-Smallest-String-After-a-Swap.md) | 🟢 Easy | Greedy, String |
+## Topics Covered
 
-## 📚 Daily Solutions
+The problems solved so far cover the following algorithmic concepts and data structures:
 
-<details>
-<summary>Days 01–50</summary>
+- Array
+- Counting
+- Greedy
+- Hash Table
+- Math
+- Sorting
+- String
+- Two Pointers
+- Union Find
+
+
+## Progress
+
+**6 / 365 days completed**
+
+## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
-| 01 | Lexicographically Smallest String After a Swap | 🟢 Easy | [View](./Day-01/Lexicographically-Smallest-String-After-a-Swap.md) |
-| 02 | Number of Equivalent Domino Pairs | 🟢 Easy | [View](./Day-02/Number-of-Equivalent-Domino-Pairs.md) |
-| 02 | Two Sum | 🟢 Easy | [View](./Day-02/Two-Sum.md) |
-| 03 | Group Anagrams | 🟡 Medium | [View](./Day-03/Group-Anagrams.md) |
-| 03 | Number of Good Pairs | 🟢 Easy | [View](./Day-03/Number-of-Good-Pairs.md) |
-| 04 | Longest Consecutive Sequence | 🟡 Medium | [View](./Day-04/Longest-Consecutive-Sequence.md) |
-| 05 | Contains Duplicate | 🟢 Easy | [View](./Day-05/Contains-Duplicate.md) |
-| 06 | Valid Palindrome | 🟢 Easy | [View](./Day-06/Valid-Palindrome.md) |
+| 06 | Valid Palindrome | Easy | [View](./Day-06/Valid-Palindrome.md) |
+| 05 | Contains Duplicate | Easy | [View](./Day-05/Contains-Duplicate.md) |
+| 04 | Longest Consecutive Sequence | Medium | [View](./Day-04/Longest-Consecutive-Sequence.md) |
+| 03 | Group Anagrams | Medium | [View](./Day-03/Group-Anagrams.md) |
+| 03 | Number of Good Pairs | Easy | [View](./Day-03/Number-of-Good-Pairs.md) |
+| 02 | Number of Equivalent Domino Pairs | Easy | [View](./Day-02/Number-of-Equivalent-Domino-Pairs.md) |
+| 02 | Two Sum | Easy | [View](./Day-02/Two-Sum.md) |
+| 01 | Lexicographically Smallest String After a Swap | Easy | [View](./Day-01/Lexicographically-Smallest-String-After-a-Swap.md) |
 
-</details>
 
-## 🏆 Milestones
+## Goals
 
-- [x] Day 01 — Started the challenge
-- [ ] Day 07 — 7 days completed
-- [ ] Day 14 — 14 days completed
-- [ ] Day 30 — 30 days completed
-- [ ] Day 50 — 50 days completed
-- [ ] Day 100 — 100 days completed
-- [ ] Day 150 — 150 days completed
-- [ ] Day 200 — 200 days completed
-- [ ] Day 250 — 250 days completed
-- [ ] Day 300 — 300 days completed
-- [ ] Day 365 — Challenge Complete 🎉
+- Improve algorithmic thinking.
+- Recognize common Data Structure and Algorithm (DSA) patterns.
+- Write cleaner, more maintainable, and efficient solutions.
+- Improve time and space complexity analysis.
+- Build consistency through daily practice.
 
-## 💭 Why I'm Doing This
+## Author
 
-I'm not trying to become someone who memorizes 300 LeetCode solutions.
-
-I'm trying to become someone who can look at a problem,
-break it down, recognize patterns, and build a solution.
-
-One day at a time.
-
-> Consistency beats intensity.
-
-## 🛠️ Skills I'm Building
-
-### ✅ Practiced
-
-Array · Hash Table · String · Sorting · Counting · Two Pointers · Union Find · Math · Greedy
-
-### 🔜 Upcoming
-
-Arrays · Strings · Sliding Window · Binary Search · Stack · Queue · Linked List · Trees · Graphs · Dynamic Programming
-
-## 💻 Languages
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+**Võ Thanh Tuấn**  
+Software Engineering Student  
+Aspiring Backend Developer
