@@ -6,25 +6,25 @@
 
 ---
 
-## 🧩 Problem
+## Problem
 
 Given a string representing an integer, swap any two adjacent digits that have the same parity to get the lexicographically smallest string possible.
 
 ---
 
-## 💡 Key Insight
+## Key Insight
 
 
 
 ---
 
-## 🚀 Approach
+## Approach
 
 
 
 ---
 
-## 💻 My Solution
+## My Solution
 
 ```java
 class Solution {
@@ -54,7 +54,7 @@ class Solution {
 
 ---
 
-## ⏱️ Complexity
+## Complexity
 
 * **Time:** `O(?)`
 
@@ -63,7 +63,7 @@ class Solution {
 
 ---
 
-## 🧠 What I Learned
+## What I Learned
 
 * Implemented optimal approach using Greedy.
 * Improved understanding of time/space tradeoffs in this problem.
@@ -71,14 +71,14 @@ class Solution {
 
 ---
 
-## ⚠️ Things to Watch
+## Things to Watch
 
 * Avoid unnecessary iterations to keep time complexity optimal.
 * Be careful with index bounds and edge cases.
 
 ---
 
-## 📌 Progress
+## Progress
 
 **Day:** 1 / 365
 **Problem:** Lexicographically Smallest String After a Swap
