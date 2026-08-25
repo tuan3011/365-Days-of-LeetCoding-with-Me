@@ -41,6 +41,7 @@ Each solution is documented in a consistent Markdown format to reinforce learnin
 The problems solved so far cover the following algorithmic concepts and data structures:
 
 - Array
+- Binary Search
 - Counting
 - Greedy
 - Hash Table
@@ -53,12 +54,13 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**6 / 365 days completed**
+**7 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 07 | Two Sum II - Input Array Is Sorted | Medium | [View](./Day-07/Two-Sum-II-Input-Array-Is-Sorted.md) |
 | 06 | Valid Palindrome | Easy | [View](./Day-06/Valid-Palindrome.md) |
 | 05 | Contains Duplicate | Easy | [View](./Day-05/Contains-Duplicate.md) |
 | 04 | Longest Consecutive Sequence | Medium | [View](./Day-04/Longest-Consecutive-Sequence.md) |
