@@ -54,12 +54,13 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**7 / 365 days completed**
+**8 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 08 | 3Sum | Medium | [View](./Day-08/3Sum.md) |
 | 07 | Two Sum II - Input Array Is Sorted | Medium | [View](./Day-07/Two-Sum-II-Input-Array-Is-Sorted.md) |
 | 06 | Valid Palindrome | Easy | [View](./Day-06/Valid-Palindrome.md) |
 | 05 | Contains Duplicate | Easy | [View](./Day-05/Contains-Duplicate.md) |
