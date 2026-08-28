@@ -45,7 +45,7 @@ class Solution {
     }
 }
 
----
+```
 
 ## Complexity
 
@@ -68,7 +68,7 @@ class Solution {
 * The array is already sorted, which guarantees all duplicates sit next to each other.
 * The problem asks to return the *number of unique elements* (`left + 1`), not the 0-based index.
 
-```
+---
 
 ## Progress
 
