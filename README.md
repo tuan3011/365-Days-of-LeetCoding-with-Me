@@ -43,9 +43,11 @@ The problems solved so far cover the following algorithmic concepts and data str
 - Array
 - Binary Search
 - Counting
+- Dynamic Programming
 - Greedy
 - Hash Table
 - Math
+- Sliding Window
 - Sorting
 - String
 - Two Pointers
@@ -54,12 +56,14 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**9 / 365 days completed**
+**10 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 10 | Best Time to Buy and Sell Stock | Easy | [View](./Day-10/Best-Time-to-Buy-and-Sell-Stock.md) |
+| 10 | Longest Substring Without Repeating Characters | Medium | [View](./Day-10/Longest-Substring-Without-Repeating-Characters.md) |
 | 09 | Container With Most Water | Medium | [View](./Day-09/Container-With-Most-Water.md) |
 | 09 | Remove Duplicates from Sorted Array | Easy | [View](./Day-09/Remove-Duplicates-from-Sorted-Array.md) |
 | 08 | 3Sum | Medium | [View](./Day-08/3Sum.md) |
