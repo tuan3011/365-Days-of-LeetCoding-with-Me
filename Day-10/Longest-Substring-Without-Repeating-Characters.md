@@ -22,68 +22,15 @@ Here is the breakdown of my journey from the initial logic to the optimized vers
 
 ---
 
----
-
 ## Approach
 
-1: The Intuitive HashSet (68ms)
-
+### Approach 1: The Intuitive HashSet (68ms)
 The core logic relies on two pointers: `left` and `right`.
-- The `right` pointer aggressive expands the window by reading one character at a time.
+- The `right` pointer aggressively expands the window by reading one character at a time.
 - If the character is **NOT** in the `HashSet`, we add it and calculate the new max length.
 - If the character **IS** already in the `HashSet` (a collision!), an alarm goes off. We use a `while` loop to make the `left` pointer "sweep" forward. It removes characters from the `HashSet` one by one until the exact duplicate character is kicked out of our window.
 
-### Code (Version 1)
-```java
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int left = 0;
-        int max = 0;
-        HashSet<Character> set = new HashSet<>();
-        
-        for (int right = 0; right < s.length(); right++) {
-            // The Sweeper: kick elements out until the duplicate is gone
-            while (set.contains(s.charAt(right))) {
-                set.remove(s.charAt(left));
-                left++;
-            }
-            // Register new character
-            set.add(s.charAt(right));
-            max = Math.max(max, right - left + 1);
-        }
-        return max;
-    }
-}
-```
-
----
-
-## My Solution
-
-(Version 1)
-```java
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        int left = 0;
-        int max = 0;
-        HashSet<Character> set = new HashSet<>();
-        
-        for (int right = 0; right < s.length(); right++) {
-            // The Sweeper: kick elements out until the duplicate is gone
-            while (set.contains(s.charAt(right))) {
-                set.remove(s.charAt(left));
-                left++;
-            }
-            // Register new character
-            set.add(s.charAt(right));
-            max = Math.max(max, right - left + 1);
-        }
-        return max;
-    }
-}
-```
-# Approach 2: The ASCII Array Optimization (~11ms)
-
+### Approach 2: The ASCII Array Optimization (~11ms)
 Why was Version 1 taking 68ms? Because in Java, `HashSet<Character>` forces primitive `char` types to be "boxed" into `Character` objects, creating overhead. Furthermore, hashing takes extra computational time.
 
 Since standard ASCII characters only map to integer values from 0 to 127, my mentor suggested I use a simple `boolean[] set = new boolean[128]`.
@@ -93,23 +40,78 @@ Since standard ASCII characters only map to integer values from 0 to 127, my men
 - The execution logic remains exactly the same, but instead of calling `.contains()` and `.remove()`, we simply flip boolean values to `true` or `false` by accessing array indices directly in RAM.
 
 This simple change bypassed all Object overhead and dropped my execution time to around **11ms**.
-##
+
+---
+
+## My Solution
+
+### Version 1: The HashSet Approach
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int left = 0;
+        int max = 0;
+        HashSet<Character> set = new HashSet<>();
+        
+        for (int right = 0; right < s.length(); right++) {
+            // The Sweeper: kick elements out until the duplicate is gone
+            while (set.contains(s.charAt(right))) {
+                set.remove(s.charAt(left));
+                left++;
+            }
+            // Register new character
+            set.add(s.charAt(right));
+            max = Math.max(max, right - left + 1);
+        }
+        return max;
+    }
+}
+```
+
+### Version 2: The ASCII Array Optimization
+```java
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        int left = 0;
+        int max = 0;
+        // The ASCII tracker
+        boolean[] set = new boolean[128];
+        
+        for (int right = 0; right < s.length(); right++) {
+            char r = s.charAt(right);
+            
+            // The Sweeper using array indices
+            while (set[r]) {
+                set[s.charAt(left)] = false;
+                left++;
+            }
+            
+            // Register new character
+            set[r] = true;
+            max = Math.max(max, right - left + 1);
+        }
+        return max;
+    }
+}
+```
 
 ---
 
 ## Complexity
 
 * **Time:** `O(N)`
-(The fast pointer `right` traverses the array exactly once).
-* **Space:** `O(1) or O(N)`
-(Depends on HashSet implementation).
+(The fast pointer `right` traverses the array exactly once, and the `left` pointer also traverses each character at most once).
+* **Space:** `O(1)`
+(Using `boolean[128]` requires exactly 128 bytes, which is strictly constant regardless of the input string length).
 
 ---
 
 ## What I Learned
 
-* Successfully applied the Sliding Window pattern using a HashSet.
+* Successfully applied the Sliding Window pattern.
 * Understood how to dynamically shrink a window from the left when a constraint (unique characters) is violated.
+* Learned the performance cost of Object boxing (primitive `char` to `Character` objects) and Hashing in Java.
+* Discovered that ASCII properties can be mapped directly to an array for lightning-fast `O(1)` lookups.
 
 ---
 
