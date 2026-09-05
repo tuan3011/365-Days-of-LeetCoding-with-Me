@@ -56,12 +56,13 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**11 / 365 days completed**
+**12 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 12 | Permutation in String | Medium | [View](./Day-12/Permutation-in-String.md) |
 | 11 | Longest Repeating Character Replacement | Medium | [View](./Day-11/Longest-Repeating-Character-Replacement.md) |
 | 10 | Best Time to Buy and Sell Stock | Easy | [View](./Day-10/Best-Time-to-Buy-and-Sell-Stock.md) |
 | 10 | Longest Substring Without Repeating Characters | Medium | [View](./Day-10/Longest-Substring-Without-Repeating-Characters.md) |
