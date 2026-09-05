@@ -75,9 +75,8 @@ class Solution {
         return false;
     }
 }
-
----
 ```
+---
 
 ## Complexity
 
