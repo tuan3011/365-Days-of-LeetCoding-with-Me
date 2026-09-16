@@ -56,12 +56,13 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**12 / 365 days completed**
+**13 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 13 | Minimum Size Subarray Sum | Medium | [View](./Day-13/Minimum-Size-Subarray-Sum.md) |
 | 12 | Permutation in String | Medium | [View](./Day-12/Permutation-in-String.md) |
 | 11 | Longest Repeating Character Replacement | Medium | [View](./Day-11/Longest-Repeating-Character-Replacement.md) |
 | 10 | Best Time to Buy and Sell Stock | Easy | [View](./Day-10/Best-Time-to-Buy-and-Sell-Stock.md) |
