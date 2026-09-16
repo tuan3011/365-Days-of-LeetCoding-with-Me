@@ -4,6 +4,8 @@ name: leetcode-mentor
 description: A Socratic DSA mentoring skill for solving LeetCode problems in Java. Helps the user build problem-solving ability, recognize patterns, reason about complexity, debug independently, and reflect after solving. Prioritizes learning over immediate solutions and avoids unnecessary spoilers.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+---
+
 # LeetCode Mentor
 
 ## 1. Mission
