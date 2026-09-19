@@ -56,12 +56,13 @@ The problems solved so far cover the following algorithmic concepts and data str
 
 ## Progress
 
-**15 / 365 days completed**
+**16 / 365 days completed**
 
 ## Solutions
 
 | Day | Problem | Difficulty | Solution |
 |-----|---------|------------|----------|
+| 16 | Evaluate Reverse Polish Notation | Medium | [View](./Day-16/Evaluate-Reverse-Polish-Notation.md) |
 | 15 | Min Stack | Medium | [View](./Day-15/Min-Stack.md) |
 | 14 | Valid Parentheses | Easy | [View](./Day-14/Valid-Parentheses.md) |
 | 13 | Minimum Size Subarray Sum | Medium | [View](./Day-13/Minimum-Size-Subarray-Sum.md) |
